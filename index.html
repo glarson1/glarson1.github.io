@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Quality Construction | Building Your Vision</title>
+  <meta name="description" content="Local construction company. Residential and commercial building, renovations, and repairs. Free estimates." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@500;600;700&family=Source+Sans+3:wght@400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="#" class="logo">Quality Construction</a>
+      <button type="button" class="nav-toggle" aria-label="Open menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+      <nav class="nav" aria-label="Main">
+        <a href="#services">Services</a>
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="hero-overlay"></div>
+      <div class="container hero-content">
+        <h1>Building Your Vision, <span>One Project at a Time</span></h1>
+        <p class="hero-tagline">Residential & commercial construction, renovations, and repairs. Licensed, insured, and ready to deliver.</p>
+        <a href="#contact" class="btn btn-primary">Get a Free Estimate</a>
+      </div>
+    </section>
+
+    <section id="services" class="section services">
+      <div class="container">
+        <h2 class="section-title">What We Do</h2>
+        <div class="services-grid">
+          <article class="service-card">
+            <div class="service-icon" aria-hidden="true">◆</div>
+            <h3>New Construction</h3>
+            <p>From foundations to finish, we build homes and commercial spaces to last.</p>
+          </article>
+          <article class="service-card">
+            <div class="service-icon" aria-hidden="true">◇</div>
+            <h3>Renovations & Remodels</h3>
+            <p>Kitchens, bathrooms, additions—we bring your upgrade ideas to life.</p>
+          </article>
+          <article class="service-card">
+            <div class="service-icon" aria-hidden="true">▣</div>
+            <h3>Repairs & Maintenance</h3>
+            <p>Repairs, siding, roofing, and general maintenance when you need it.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="about" class="section about">
+      <div class="container about-inner">
+        <div class="about-text">
+          <h2 class="section-title">About Us</h2>
+          <p>We're a small, local construction company built on trust and quality work. No job is too big or too small—we treat every project with the same care and professionalism.</p>
+          <p>Licensed and insured for your peace of mind. We work with you from estimate to completion so you're never left in the dark.</p>
+        </div>
+        <div class="about-badge">
+          <span class="badge-text">Licensed & Insured</span>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="section contact">
+      <div class="container">
+        <h2 class="section-title">Get In Touch</h2>
+        <p class="contact-intro">Request a free estimate or ask a question. We'll get back to you quickly.</p>
+        <div class="contact-wrap">
+          <form class="contact-form" action="#" method="post" id="contact-form">
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" required placeholder="Your name" />
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" required placeholder="you@example.com" />
+            <label for="phone">Phone</label>
+            <input type="tel" id="phone" name="phone" placeholder="(555) 123-4567" />
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="4" required placeholder="Tell us about your project..."></textarea>
+            <button type="submit" class="btn btn-primary">Send Message</button>
+          </form>
+          <div class="contact-info">
+            <h3>Contact Info</h3>
+            <p><strong>Phone</strong><br /><a href="tel:+15551234567">(555) 123-4567</a></p>
+            <p><strong>Email</strong><br /><a href="mailto:info@qualityconstruction.com">info@qualityconstruction.com</a></p>
+            <p><strong>Hours</strong><br />Mon–Fri 8am–5pm</p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>&copy; <span id="year"></span> Quality Construction. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="main.js"></script>
+</body>
+</html>
