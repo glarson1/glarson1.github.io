@@ -111,7 +111,7 @@ h1, h2, h3 { font-family: var(--font-heading); font-weight: 700; margin: 0 0 0.5
 .hero-bg {
   position: absolute;
   inset: 0;
-  background: var(--color-bg-dark) url("assets/IMG_8733-8a6a4d49-6247-435b-8369-728342de7f34.png") center / cover no-repeat;
+  background: var(--color-bg-dark) url("/assets/IMG_8733-8a6a4d49-6247-435b-8369-728342de7f34.png") center / cover no-repeat;
 }
 .hero-overlay {
   position: absolute;
