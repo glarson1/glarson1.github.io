@@ -102,21 +102,23 @@ h1, h2, h3 { font-family: var(--font-heading); font-weight: 700; margin: 0 0 0.5
   min-height: 85vh;
   display: flex;
   align-items: center;
-  background: linear-gradient(135deg, #2d2b28 0%, #1c1b19 50%);
-  background-image: 
-    linear-gradient(135deg, rgba(28, 27, 25, 0.92) 0%, rgba(45, 43, 40, 0.9) 100%),
-    repeating-linear-gradient(
-      90deg,
-      transparent,
-      transparent 2px,
-      rgba(255,255,255,0.02) 2px,
-      rgba(255,255,255,0.02) 4px
-    );
+  background: var(--color-bg-dark);
   color: var(--color-white);
   padding-top: 5rem;
   padding-bottom: 3rem;
+  overflow: hidden;
 }
-.hero-overlay { position: absolute; inset: 0; pointer-events: none; }
+.hero-bg {
+  position: absolute;
+  inset: 0;
+  background: var(--color-bg-dark) url("assets/IMG_8733-8a6a4d49-6247-435b-8369-728342de7f34.png") center / cover no-repeat;
+}
+.hero-overlay {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  background: linear-gradient(135deg, rgba(28, 27, 25, 0.88) 0%, rgba(28, 27, 25, 0.75) 50%, rgba(28, 27, 25, 0.9) 100%);
+}
 .hero-content { position: relative; z-index: 1; }
 .hero h1 {
   font-size: clamp(2rem, 5vw, 3.25rem);
@@ -165,6 +167,13 @@ h1, h2, h3 { font-family: var(--font-heading); font-weight: 700; margin: 0 0 0.5
 
 /* ----- Services ----- */
 .services { background: var(--color-white); box-shadow: var(--shadow); }
+.services-intro {
+  text-align: center;
+  color: var(--color-text-muted);
+  max-width: 28em;
+  margin: -0.5rem auto 1.75rem;
+  font-size: 1rem;
+}
 .services-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
@@ -187,6 +196,44 @@ h1, h2, h3 { font-family: var(--font-heading); font-weight: 700; margin: 0 0 0.5
 }
 .service-card h3 { font-size: 1.2rem; margin-bottom: 0.4em; }
 .service-card p { margin: 0; color: var(--color-text-muted); font-size: 0.98rem; }
+
+/* ----- Gallery ----- */
+.gallery { background: var(--color-bg); }
+.gallery-intro {
+  text-align: center;
+  color: var(--color-text-muted);
+  max-width: 36em;
+  margin: 0 auto 2rem;
+}
+.gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 0.75rem;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+.gallery-item {
+  position: relative;
+  aspect-ratio: 4 / 3;
+  border-radius: var(--radius);
+  overflow: hidden;
+  background: var(--color-bg-dark);
+  box-shadow: var(--shadow);
+}
+.gallery-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+.gallery-item:hover img { transform: scale(1.03); }
+
+@media (max-width: 768px) {
+  .gallery-grid { grid-template-columns: repeat(2, 1fr); gap: 0.5rem; }
+}
+@media (max-width: 480px) {
+  .gallery-grid { grid-template-columns: 1fr; }
+}
 
 /* ----- About ----- */
 .about { background: var(--color-bg); }
