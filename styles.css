@@ -9,7 +9,7 @@
   --color-text-muted: #4a5568;
   --color-border: #e2e8f0;
   --font-display: "Bebas Neue", "Arial Narrow", sans-serif;
-  --font-body: "Source Sans 3", system-ui, -apple-system, sans-serif;
+  --font-body: "Source Sans 3", system-ui, -apple-system, "Segoe UI", sans-serif;
   --shadow-sm: 0 1px 3px rgba(30, 58, 95, 0.08);
   --shadow-md: 0 12px 40px rgba(30, 58, 95, 0.12);
   --radius: 8px;
@@ -109,6 +109,7 @@ a:hover {
   top: 0;
   z-index: 100;
   background: rgba(255, 255, 255, 0.92);
+  -webkit-backdrop-filter: blur(10px);
   backdrop-filter: blur(10px);
   border-bottom: 1px solid var(--color-border);
   box-shadow: var(--shadow-sm);
